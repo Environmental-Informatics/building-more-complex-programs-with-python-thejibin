@@ -4,6 +4,7 @@ by Jibin Joseph
 
 Modified to add comments
 """
+
 ## Required packages
 import turtle
 import math
@@ -100,13 +101,17 @@ def move(t, length):
 
 move(jibin, -200)
 ## Draw turtle flowers with 7 petals with radius of 60 pixels with arc angle of 60 degree
-## if angle subtended by arc is less, it will cause gap between petals
+## If angle subtended by arc is equal to 60 deg, it will cause no gap between petals
 flower(jibin, 7, 60.0, 60.0)
 
 move(jibin, 200)
+## Draw turtle flowers with 10 petals with radius of 40 pixels with arc angle of 80 degree
+## As angle subtended by arc is greater than 36 deg , it will causes petals to overlap
 flower(jibin, 10, 40.0, 80.0)
 
 move(jibin, 200)
+## Draw turtle flowers with 20 petals with radius of 140 pixels with arc angle of 20 degree
+## As angle subtended by arc is greater than 18 deg , there will be a small gap between petals
 flower(jibin, 20, 140.0, 20.0)
 
 ## Hides the turtle at end
