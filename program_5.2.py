@@ -20,9 +20,9 @@ def check_fermat(a,b,c,n):
     n: Any value greater than n
     """
     ## Uses "and" operator to combine the conditionals
-
-    if n>2 and a**n + b**n == c**n: # this steps if the power (exponent) specified is greater than 2
-        #print("Provide n greater than 2")
+    ## Conditional 1: n should be greater than 2
+    ## Conditional 2: a^n + b^n =c^n
+    if n>2 and a**n + b**n == c**n:
         print("Holy smokes, Fermat was wrong!")
         print("Fermat's Theorem is violated")
         return
