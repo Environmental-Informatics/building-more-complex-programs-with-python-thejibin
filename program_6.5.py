@@ -26,11 +26,11 @@ def gcd(a,b):
         Source: http://mfleck.cs.illinois.edu/building-blocks/version-1.0/number-theory.pdf
         It states that GCD is not defined for 0 and 0
         """
-        return("GCD not defined")
+        return("not defined")
 
     ## Base case for iteration
     if a==0 or b==0:
-        return a
+        return (max(a,b))
 
     ## For swapping the integers if a is less than b
     if a<b:
@@ -45,5 +45,5 @@ a=int(input("Enter a integer value of a:  \n"))
 b=int(input("Enter a integer value of b: \n"))
 
 ## Print using format operator
-
+## Converts value of gcd to accommodate GCD not defined
 print("The greatest common divisor (GCD) of %d and %d is: %s" % (a, b, str(gcd(a,b))))
